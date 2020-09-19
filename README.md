@@ -4,7 +4,6 @@ Hobodream is a set of Unity tools created by Neogoma. The objective is to let ou
 
 This framework is useful if:
 - You are a developer and are looking for a quick implementation of an Observer design pattern in unity
-- You are a designer and you want to quickly prototype without writing lines of code
 - You are using other Hobodream frameworks (this framework is the base of all the other frameworks we are developing) 
 
 # Compatibility
