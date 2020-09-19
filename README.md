@@ -26,6 +26,7 @@ Note that **_IInteractiveElement_** and **_IInteractionEvent_** have their own b
 - **_AbstractInteractive_** : is an abstract class implementing a basic Observer pattern logic. It implements all the methods in **_IInteractiveElement_** has been created to add more to a monobehavior script. 
 - **_AbstractNonMonoInteractive_** : is also an abstract class implementing **_IInteractiveElement_** but it can be used on standard C# classes rather than monobehaviors
 - **_BaseInteractionEvent_** : Is the basic implementation of **_IInteractionEvent_**, the class is a standard c# class. You can extend it to add more data to communicate between your classes.
+
 **NOTE** An **_IInteractiveElement_** can trigger multiple type of Events and a **_IInteractiveElementListener_** can listen to multiple type of events. 
 
 ### Example
@@ -54,8 +55,10 @@ If you want a connector that will require text/json data you can call the **GetD
 
 ### Basic operations
 You can register a listener to a connector by using the __AddListener__ method. When you add a listener you need to provide an object and a key. The key will be used to decide when to call the listener.
+
 **NOTE**: A listener can listen to multiple keys but in this case you need to add it manually every time.
 You can request URL via the __RequestURL__ method. If you don't specify any listener Key then the request will happen without notifying anybody. If the request has listeners then the listener methods will be called depending on the result.
+
 **NOTE**: When using the system you can have a warning "No JWT token", it's because our implementation is design to work with a Laravel API using bearer tokens for authentification.
 
 ### Examples
