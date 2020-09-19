@@ -7,10 +7,7 @@ This framework is useful if:
 - You are a designer and you want to quickly prototype without writing lines of code
 - You are using other Hobodream frameworks (this framework is the base of all the other frameworks we are developing) 
 
-#TODO
-- Complete documentation with non critical components
-
-#Compatibility
+# Compatibility
 
 Unity 2019.4.x or higher
 
@@ -103,3 +100,7 @@ We have a bunch of basic scripts for easy setup and prototyping:
 - **Shoot** which is a basic shooting script that will start from camera if no shoot origin was specified
 - **TextIncrement** that can makes it easy to increment a text
 - **SimpleCommonButton** is a button script that can trigger different type of events depending on your choice
+
+# TODO
+- Complete documentation with non critical components
+- Add more examples
