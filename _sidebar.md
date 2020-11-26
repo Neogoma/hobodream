@@ -1,12 +1,8 @@
-* Getting started
-  * [Quick start](quickstart.md)
-  * [Observer system](components.md)
-  * [Networking system](navigation.md)
-  * [Localization scripts](mapping_instructions.md)
-  * [Basic scripts](my_objects.md)  
-
-* Editor
-  * [Basic commands](editor_commands.md)
+* [Quick start](quickstart.md)
+* [Observer system](components.md)
+* [Networking system](navigation.md)
+* [Localization scripts](mapping_instructions.md)
+* [Basic scripts](my_objects.md)  
 
 * Links
   
