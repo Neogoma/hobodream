@@ -2,6 +2,7 @@
 * [Observer system](observer.md)
 * [Networking system](networking.md)
 * [Localization scripts](localization.md)
+* [Gameobject pools](gameobject_pools.md)
 
 * Links
   
