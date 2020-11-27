@@ -2,6 +2,9 @@
 
 namespace Neogoma.Hobodream.Examples.ObjectPool
 {
+    /// <summary>
+    /// Class example that will
+    /// </summary>
     public class PositionsAndRotationsClass
     {
         private Vector3 position;
@@ -30,21 +33,16 @@ namespace Neogoma.Hobodream.Examples.ObjectPool
             }
         }
 
-        private PrimitiveType primitive;
-        
-        public PrimitiveType Primitive
-        {
-            get
-            {
-                return primitive;
-            }
-        }
 
-        public PositionsAndRotationsClass(PrimitiveType type)
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="type"></param>
+        public PositionsAndRotationsClass()
         {
             position = Random.onUnitSphere * Random.Range(0, 10);
             rotation = Random.rotation;
-            primitive = type;
+            
         }
     }
 

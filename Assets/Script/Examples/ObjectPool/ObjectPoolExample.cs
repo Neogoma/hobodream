@@ -37,16 +37,7 @@ namespace Neogoma.Hobodream.Examples.ObjectPool
         /// </summary>
         public void GenerateCubes()
         {
-            ClearDatas();
-
-            int numberOfItems=Random.Range(1, maximumRandomToGenerate);
-
-            for (int i = 0; i < numberOfItems; i++)
-            {
-                allCubes.Add(new PositionsAndRotationsClass(PrimitiveType.Cube));
-            }
-
-            cubeObjectPool.AddItems(allCubes.ToArray());
+            SetupDatas(allCubes,cubeObjectPool);
         }
 
         /// <summary>
@@ -54,18 +45,23 @@ namespace Neogoma.Hobodream.Examples.ObjectPool
         /// </summary>
         public void GenerateSpheres()
         {
+            SetupDatas(allSpheres,sphereObjectPool);
+            
+        }
+
+        private void SetupDatas(List<PositionsAndRotationsClass> listToFill,PositionAndRotationsObjectPool poolToUse)
+        {
             ClearDatas();
 
             int numberOfItems = Random.Range(1, maximumRandomToGenerate);
 
             for (int i = 0; i < numberOfItems; i++)
             {
-                allSpheres.Add(new PositionsAndRotationsClass(PrimitiveType.Sphere));
+                listToFill.Add(new PositionsAndRotationsClass());
             }
 
-            sphereObjectPool.AddItems(allSpheres.ToArray());
+            poolToUse.AddItems(listToFill.ToArray());
         }
-
 
         private void ClearDatas()
         {

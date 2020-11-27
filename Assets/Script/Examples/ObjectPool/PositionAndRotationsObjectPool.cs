@@ -4,8 +4,12 @@ using UnityEngine;
 
 namespace Neogoma.Hobodream.Examples.ObjectPool
 {
+    /// <summary>
+    /// Example of implementation of the <see cref="AbstractGameobjectPoolManager{T}"/> using <see cref="PositionsAndRotationsClass"/>
+    /// </summary>
     public class PositionAndRotationsObjectPool : AbstractGameobjectPoolManager<PositionsAndRotationsClass>
     {
+        /// <inheritdoc/>
         public PositionAndRotationsObjectPool(GameObject prefab, Transform root, params IInteractiveElementListener[] listeners) : base(prefab, root, listeners)
         {
         }
