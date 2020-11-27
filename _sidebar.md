@@ -1,8 +1,7 @@
-* [Quick start](quickstart.md)
-* [Observer system](components.md)
-* [Networking system](navigation.md)
-* [Localization scripts](mapping_instructions.md)
-* [Basic scripts](my_objects.md)  
+* [About](README.md)
+* [Observer system](observer.md)
+* [Networking system](networking.md)
+* [Localization scripts](localization.md)
 
 * Links
   
