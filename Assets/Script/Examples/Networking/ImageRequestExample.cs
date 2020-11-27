@@ -3,7 +3,7 @@ using com.Neogoma.HoboDream.Util;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Neogoma.Hobodream.Examples.BasicInteractive
+namespace Neogoma.Hobodream.Examples.Networking
 {
     public class ImageRequestExample : MonoBehaviour,ITextureDownloadListener
     {
