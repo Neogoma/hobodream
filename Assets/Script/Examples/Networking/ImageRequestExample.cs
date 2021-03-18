@@ -8,7 +8,7 @@ namespace Neogoma.Hobodream.Examples.Networking
     public class ImageRequestExample : MonoBehaviour,ITextureDownloadListener
     {
         public Image img;
-
+        public string url= "https://neogoma.com/images/logoneogoma.png";
 
         private IHTTPConnector<string, ITextureDownloadListener> textureDownloader;
         public static string textureListenerKey = "textureTest";
@@ -25,7 +25,7 @@ namespace Neogoma.Hobodream.Examples.Networking
         public void RunRequest()
         {
 
-            textureDownloader.RequestURL("https://www.coolhobo.com/images/photo/k0Ps4kdvJ8yU3muwQrR6ZO3m4OUPrvuxO7CGaqZL.jpeg", textureListenerKey);
+            textureDownloader.RequestURL(url,true, textureListenerKey);
 
         }
 
