@@ -10,7 +10,7 @@ namespace Neogoma.Hobodream.Examples.Networking
         public Image img;
         public string url= "https://neogoma.com/images/logoneogoma.png";
 
-        private IHTTPConnector<string, ITextureDownloadListener> textureDownloader;
+        private IHTTPConnector<ITextureDownloadListener> textureDownloader;
         public static string textureListenerKey = "textureTest";
 
 
