@@ -9,7 +9,7 @@ namespace Neogoma.Hobodream.Examples.Networking
         public Text text;
 
 
-        private IHTTPConnector<string, IJSonRequestListener> connector;
+        private IHTTPConnector<IJSonRequestListener> connector;
         private string listenerKey = "key";
 
         public void Awake()
