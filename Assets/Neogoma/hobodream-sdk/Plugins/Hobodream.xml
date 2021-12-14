@@ -942,7 +942,7 @@
             <summary>
             Basic implementation of the texture downloader    
             </summary>
-            <seealso cref="!:AbstractHTTPConnector&lt;T, L, R&gt;"/>
+            <seealso cref="T:com.Neogoma.HoboDream.Network.Internal.AbstractHTTPConnector`2"/>
         </member>
         <member name="T:com.Neogoma.HoboDream.Network.IOBJFilesDownloader`1">
             <summary>
@@ -2306,7 +2306,7 @@
             Class used to manage <see cref="T:UnityEngine.GameObject"/> pools that are children of the <see cref="P:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.Root"/> transform.
             <br></br>The gameobjects will represent a <see cref="!:T"/> type
             </summary>
-            <typeparam name="T">Type of objects managed by this objectpoolmanager
+            <typeparam name="T">Model of objects managed by this objectpoolmanager
             </typeparam>
         </member>
         <member name="M:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.#ctor(UnityEngine.GameObject,UnityEngine.Transform,com.Neogoma.HoboDream.IInteractiveElementListener[])">
@@ -3761,65 +3761,6 @@
         <member name="M:com.Neogoma.HoboDream.UI.Buttons.AbstractTouchOnObject.OnRelease">
             <summary>
             Action called when the object is released
-            </summary>
-        </member>
-        <member name="T:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior">
-             <summary>
-            This class will display the errors in a defined hint object.<br></br>
-             This system uses the Localization system and assumes that keys <see cref="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.NO_NETWORK_KEY"/>, <see cref="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.SERVER_PROBLEM"/> and <see cref="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.NET_HINT_REFRESH_KEY"/><br></br>
-             Listens <see cref="F:com.Neogoma.HoboDream.InteractiveEventAction.NO_NETWORK"/>, <see cref="F:com.Neogoma.HoboDream.InteractiveEventAction.SERVER_PROBLEM"/>, <see cref="F:com.Neogoma.HoboDream.InteractiveEventAction.LANGUAGE_CHANGED"/>
-             </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.hintObject">
-            <summary>
-            Hint gameobject
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.headText">
-            <summary>        
-            hint text
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.subtitleText">
-            <summary>
-            Hint subtext
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.manager">
-            <summary>
-            Language manager for hint localizations        
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.errorDispatcher">
-            <summary>
-            Error Dispatcher
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.NO_NETWORK_KEY">
-            <summary>
-            Localization key for the text to display when there is no network
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.SERVER_PROBLEM">
-            <summary>
-            Localization key for the text to display when there is a problem with the server
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior.NET_HINT_REFRESH_KEY">
-            <summary>
-            Localization key for the tet to display when user needs to refresh
-            </summary>
-        </member>
-        <member name="T:com.Neogoma.HoboDream.UI.Errors.ErrorDispatcher">
-            <inheritdoc/>
-            <summary>
-            this class is Error Dispatcher:Centrally handle network problems and the server returns errors , and send events to <see cref="T:com.Neogoma.HoboDream.UI.Errors.ErrorBehavior"/><br></br>
-            Listens: <see cref="F:com.Neogoma.HoboDream.InteractiveEventAction.FAILURE"/>
-            </summary>
-        </member>
-        <member name="F:com.Neogoma.HoboDream.UI.Errors.ErrorDispatcher.gPSManager">
-            <summary>
-            GPS Manager
             </summary>
         </member>
         <member name="T:com.Neogoma.HoboDream.UI.IFunctionRunner">

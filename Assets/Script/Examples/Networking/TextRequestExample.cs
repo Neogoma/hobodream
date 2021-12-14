@@ -24,7 +24,7 @@ namespace Neogoma.Hobodream.Examples.Networking
             connector.RequestURL("www.perdu.com", listenerKey);
         }
 
-        public void RequestFailed(string jsonResult, string key)
+        public void RequestFailed(long code,string jsonResult, string key)
         {
             
         }
