@@ -24,12 +24,12 @@ namespace Neogoma.Hobodream.Examples.Networking
             connector.RequestURL("www.perdu.com", listenerKey);
         }
 
-        public void RequestFailed(long code,string jsonResult, string key)
+        public void RequestFailed(long code, string data, string jsonResult, string key)
         {
             
         }
 
-        public void RequestSucess(string jsonResult, string key)
+        public void RequestSuccess(string jsonResult, string key)
         {
             text.text = jsonResult;
         }
