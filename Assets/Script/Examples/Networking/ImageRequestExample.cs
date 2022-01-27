@@ -29,7 +29,7 @@ namespace Neogoma.Hobodream.Examples.Networking
 
         }
 
-        public void RequestFailed(long code,string jsonResult, string key)
+        public void RequestFailed(long code,string data,string jsonResult, string key)
         {
             
         }
