@@ -781,7 +781,7 @@
             <returns>The specific download handler for the class
             </returns>
         </member>
-        <member name="M:com.Neogoma.HoboDream.Network.Internal.AbstractHTTPConnector`2.GetMethod(System.String)">
+        <member name="M:com.Neogoma.HoboDream.Network.Internal.AbstractHTTPConnector`2.GetWebRequest(System.String,System.String)">
             <summary>
             Returns the method to be used
             </summary>
@@ -1218,7 +1218,7 @@
             Interface that defines a cached system using <see cref="T:com.Neogoma.HoboDream.IInteractiveElement"/>
             </summary>
         </member>
-        <member name="M:com.Neogoma.HoboDream.Network.ICacheHandler`1.FindCachedData(System.String,UnityEngine.WWWForm,System.Boolean,System.String[])">
+        <member name="M:com.Neogoma.HoboDream.Network.ICacheHandler`1.FindCachedData(System.String,System.String,UnityEngine.WWWForm,System.Boolean,System.String[])">
             <summary>
             Launches a coroutine to retrieve the cached data
             </summary>
@@ -1422,7 +1422,6 @@
             <summary>
             Class used to pass the HTTP request parameters data to different requests in order to retrieve cash
             </summary>
-            <typeparam name="T">Type of listeners</typeparam>
         </member>
         <member name="P:com.Neogoma.HoboDream.Network.RequestDataContainer.URL">
             <summary>
@@ -1444,7 +1443,7 @@
             Clears all listeners
             </summary>
         </member>
-        <member name="M:com.Neogoma.HoboDream.Network.RequestDataContainer.#ctor(System.String,UnityEngine.WWWForm,System.Boolean,System.String[])">
+        <member name="M:com.Neogoma.HoboDream.Network.RequestDataContainer.#ctor(System.String,System.String,UnityEngine.WWWForm,System.Boolean,System.String[])">
             <summary>
             Constructor
             </summary>
@@ -1452,6 +1451,7 @@
             <param name="form">Form of the request</param>
             <param name="clearListeners">If set to true will cleanup all listeners on end</param>
             <param name="listenerKeys">Listeners ot notify</param>
+            <param name="apiToken">Request API token</param>
         </member>
         <member name="T:com.Neogoma.HoboDream.Network.IRequestHandlerListener">
             <inheritdoc />
