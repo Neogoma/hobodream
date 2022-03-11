@@ -60,7 +60,7 @@ namespace Neogoma.Hobodream.Examples.ObjectPool
                 listToFill.Add(new PositionsAndRotationsClass());
             }
 
-            poolToUse.AddItems(listToFill.ToArray());
+            poolToUse.SetItems(listToFill.ToArray());
         }
 
         private void ClearDatas()
