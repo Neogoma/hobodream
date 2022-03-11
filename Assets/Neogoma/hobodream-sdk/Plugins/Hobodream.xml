@@ -1433,6 +1433,11 @@
             Requested url form
             </summary>
         </member>
+        <member name="P:com.Neogoma.HoboDream.Network.RequestDataContainer.Token">
+            <summary>
+            Stored api token
+            </summary>
+        </member>
         <member name="P:com.Neogoma.HoboDream.Network.RequestDataContainer.ListenerKeys">
             <summary>
             Listeners keys
@@ -2052,6 +2057,11 @@
             <typeparam name="T">Model of objects managed by this objectpoolmanager
             </typeparam>
         </member>
+        <member name="P:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.Count">
+            <summary>
+            Count the number of objects in the pool
+            </summary>
+        </member>
         <member name="M:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.#ctor(UnityEngine.GameObject,UnityEngine.Transform,com.Neogoma.HoboDream.IInteractiveElementListener[])">
             <summary>
             Constructor
@@ -2063,12 +2073,12 @@
             /// <param name="listeners">Objects that will listen to the newly created prefabs
             </param>
         </member>
-        <member name="M:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.AddItems(`0[])">
+        <member name="M:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.SetItems(`0[])">
             <summary>
             Create the items in the object pool
             </summary>
             <param name="itemsToSetup">
-            List of items to create
+            List of items to set
             </param>
         </member>
         <member name="M:com.Neogoma.HoboDream.Util.AbstractGameobjectPoolManager`1.AddItem(`0)">
