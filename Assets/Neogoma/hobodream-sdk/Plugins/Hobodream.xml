@@ -4241,18 +4241,18 @@
             </summary>
             <returns>True there are less or the same abount of objects in this and its children than numObjectsAllowed.</returns>
         </member>
-        <member name="T:com.Neogoma.Octree.IOctreeCoordnateObject">
+        <member name="T:com.Neogoma.Octree.IOctreeCoordinateObject">
             <summary>
             Interface defining an object that can be put in octree
             </summary>
         </member>
-        <member name="M:com.Neogoma.Octree.IOctreeCoordnateObject.GetCoordnates">
+        <member name="M:com.Neogoma.Octree.IOctreeCoordinateObject.GetCoordinates">
             <summary>
-            Returns the coordnate of the object
+            Returns the coordinate of the object
             </summary>
             <returns></returns>
         </member>
-        <member name="M:com.Neogoma.Octree.IOctreeCoordnateObject.GetColor">
+        <member name="M:com.Neogoma.Octree.IOctreeCoordinateObject.GetColor">
             <summary>
             Returns the color of the object
             </summary>
